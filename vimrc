@@ -1,3 +1,7 @@
+"plugin pathogen settings
+call pathogen#runtime_append_bundles()
+call pathogen#helptags()
+
 "system settings
 set nocompatible
 set ambiwidth=double
@@ -55,3 +59,4 @@ set shiftwidth=2
 
 set grepprg=grep\ -nH\ $*
 set shellslash
+
