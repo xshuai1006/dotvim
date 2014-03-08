@@ -59,6 +59,9 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+"plugin fencview settings
+let g:fencview_autodetect=1
+
 "plugin vim-latex-suite settings
 set grepprg=grep\ -nH\ $*
 set shellslash
