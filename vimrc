@@ -1,6 +1,5 @@
 "plugin pathogen settings
-call pathogen#runtime_append_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
 
 "system settings
 set nocompatible
@@ -21,6 +20,9 @@ filetype plugin on
 set foldmethod=indent
 
 "GUI settings
+color molokai
+let g:rehash256=1
+set background=dark
 set cursorcolumn
 set cursorline
 set guifont=Yahei\ Consolas\ Hybrid\ 12
@@ -57,6 +59,10 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+"plugin vim-latex-suite settings
 set grepprg=grep\ -nH\ $*
 set shellslash
-
+let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat='pdf'
+" let g:Tex_CompileRule_pdf='pdflatex --src-specials -interaction=nonstopmode $*'
+let g:Tex_CompileRule_pdf='xelatex --src-specials -interaction=nonstopmode $*'
